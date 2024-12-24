@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/61acc9be-bff1-4f86-bc0e-6a2363885d96)
 
 # ✨ JavaScript Arithmetic Operators ➕➖✖️➗
 

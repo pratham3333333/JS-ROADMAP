@@ -2153,3 +2153,43 @@ Enjoy learning JavaScript! 😄
 - **Functions with Return**: Functions that calculate and return a value.
 
 Each section has examples and outputs enclosed in **`<details>`** and **`<summary>`** tags for easy display and toggling of content. The use of emojis makes the file more engaging and easy to read!
+
+
+```
+
+# 🚀 JavaScript Events
+
+This document explains **JavaScript events**—a powerful feature for creating interactive web applications. It includes examples of different event types and how to handle them in JavaScript.
+
+---
+
+## 📝 **What Are Events?**
+
+In JavaScript, **events** are actions that can be triggered by the user or the browser. These can be actions like clicking a button, hovering over an element, submitting a form, or even loading a page. JavaScript can **listen** for these events and respond with a function (called an **event handler**).
+
+---
+
+## 🌟 **Types of Events in JavaScript**
+
+- **Click Event**: Triggered when the user clicks on an element.
+- **Mouse Events**: Triggered when the user interacts with the mouse, like `mouseover`, `mouseout`, and `mousemove`.
+- **Keyboard Events**: Triggered by user keystrokes like `keydown`, `keyup`, and `keypress`.
+- **Form Events**: Triggered when forms are interacted with, like `submit`, `change`, and `input`.
+- **Window Events**: Triggered by actions like resizing the window or loading a page.
+
+---
+
+## 🎯 **Examples of JavaScript Events**
+
+### 1. **Click Event**
+
+A **click event** is triggered when an element (like a button) is clicked.
+
+<details>
+<summary>Example: Click Event</summary>
+
+```javascript
+document.getElementById("myButton").addEventListener("click", function() {
+  alert("Button clicked!");
+});
+

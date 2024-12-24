@@ -1553,3 +1553,259 @@ for (let i = 0; i < 5; i++) {
 
 Happy coding! 🚀
 
+
+#INTERVIEW QUESTION ON JAVASCRIPT CONTROL STATEMENTS 
+
+### 1. **What is the difference between `if` and `else if` in JavaScript?**
+
+**Answer:**
+- `if` is used to check a condition, and if it's true, it executes the block of code.
+- `else if` is used when you want to check additional conditions if the previous `if` statement(s) are false.
+
+Example:
+```javascript
+let age = 20;
+if (age < 18) {
+  console.log("You are a minor.");
+} else if (age >= 18 && age <= 60) {
+  console.log("You are an adult.");
+} else {
+  console.log("You are a senior citizen.");
+}
+```
+
+---
+
+### 2. **What is the purpose of the `switch` statement in JavaScript?**
+
+**Answer:**
+The `switch` statement evaluates an expression and compares its value against multiple `case` options. It executes the block of code that matches the expression. If no match is found, the `default` block is executed (if provided).
+
+Example:
+```javascript
+let day = 2;
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  default:
+    console.log("Invalid day");
+}
+```
+
+---
+
+### 3. **How does the `break` statement work in loops and switch statements?**
+
+**Answer:**
+The `break` statement is used to exit a loop (such as `for`, `while`, etc.) or a `switch` statement before it completes all its iterations or checks.
+
+Example (in a loop):
+```javascript
+for (let i = 0; i < 5; i++) {
+  if (i === 3) {
+    break;  // Exits the loop when i equals 3
+  }
+  console.log(i);
+}
+```
+**Output:**
+```
+0
+1
+2
+```
+
+Example (in a `switch`):
+```javascript
+let fruit = "apple";
+switch (fruit) {
+  case "apple":
+    console.log("Apple selected");
+    break;
+  case "banana":
+    console.log("Banana selected");
+    break;
+}
+```
+
+---
+
+### 4. **What is the purpose of the `continue` statement in loops?**
+
+**Answer:**
+The `continue` statement is used to skip the current iteration of a loop and continue to the next iteration.
+
+Example:
+```javascript
+for (let i = 0; i < 5; i++) {
+  if (i === 2) {
+    continue;  // Skips the iteration when i equals 2
+  }
+  console.log(i);
+}
+```
+**Output:**
+```
+0
+1
+3
+4
+```
+
+---
+
+### 5. **Explain the flow of an `if`, `else if`, and `else` chain.**
+
+**Answer:**
+An `if`, `else if`, and `else` chain checks multiple conditions in sequence. The first condition that evaluates to `true` will execute its corresponding block of code, and the rest will be skipped.
+
+Example:
+```javascript
+let score = 75;
+if (score >= 90) {
+  console.log("Grade A");
+} else if (score >= 70) {
+  console.log("Grade B");
+} else {
+  console.log("Grade C");
+}
+```
+**Output:**
+```
+Grade B
+```
+
+---
+
+### 6. **Can you explain what happens when you use `switch` without `break`?**
+
+**Answer:**
+If you use `switch` without `break`, the code will continue to execute the following `case` statements (even if they don't match) until a `break` or the end of the `switch` block is reached. This is known as **fall-through** behavior.
+
+Example:
+```javascript
+let fruit = "apple";
+switch (fruit) {
+  case "apple":
+    console.log("Apple selected");
+  case "banana":
+    console.log("Banana selected");
+    break;
+  case "cherry":
+    console.log("Cherry selected");
+}
+```
+**Output:**
+```
+Apple selected
+Banana selected
+```
+
+---
+
+### 7. **How does the `else` block in an `if-else` statement work?**
+
+**Answer:**
+The `else` block executes when the condition in the `if` statement evaluates to `false`. If no `else` block is provided, nothing happens when the `if` condition is false.
+
+Example:
+```javascript
+let temperature = 30;
+if (temperature > 25) {
+  console.log("It's hot outside! 🔥");
+} else {
+  console.log("The weather is cool. 🌬️");
+}
+```
+**Output:**
+```
+It's hot outside! 🔥
+```
+
+---
+
+### 8. **What is a nested `if` statement, and when would you use it?**
+
+**Answer:**
+A **nested `if` statement** is an `if` statement placed inside another `if` statement. You use it when you need to check multiple conditions that depend on each other.
+
+Example:
+```javascript
+let age = 20;
+let hasPermission = true;
+
+if (age >= 18) {
+  if (hasPermission) {
+    console.log("Access granted.");
+  } else {
+    console.log("Permission required.");
+  }
+} else {
+  console.log("You are too young.");
+}
+```
+**Output:**
+```
+Access granted.
+```
+
+---
+
+### 9. **What is the difference between a `for` loop and a `while` loop in JavaScript?**
+
+**Answer:**
+- A `for` loop is typically used when you know the number of iterations in advance. It contains initialization, condition, and increment/decrement all in one line.
+- A `while` loop is used when the number of iterations is unknown and continues as long as the condition is true.
+
+Example (`for` loop):
+```javascript
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+```
+
+Example (`while` loop):
+```javascript
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+```
+
+---
+
+### 10. **How does `switch` handle multiple cases for the same value?**
+
+**Answer:**
+In a `switch` statement, you can group multiple `case` blocks together for the same value without using `break` between them. This is useful when you want multiple conditions to execute the same block of code.
+
+Example:
+```javascript
+let fruit = "apple";
+switch (fruit) {
+  case "apple":
+  case "banana":
+    console.log("Fruit is either apple or banana.");
+    break;
+  case "cherry":
+    console.log("Fruit is cherry.");
+    break;
+}
+```
+**Output:**
+```
+Fruit is either apple or banana.
+```
+
+---
+
+These interview questions and answers cover a wide range of **JavaScript control flow statements** such as `if`, `else if`, `else`, `switch`, `break`, and `continue`. They will help you demonstrate your understanding of conditional logic and loops in JavaScript.
+

@@ -1,5 +1,5 @@
 
-## 📋 Arithmetic Operators Table
+### 📋Arithmetic Operators Table
 
 | Operator | Description           | Example      | Result |
 |----------|-----------------------|--------------|--------|

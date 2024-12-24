@@ -170,9 +170,6 @@ John  | 30
 
 ---
 
-
-Here is a **table** that highlights the **differences** between `let`, `var`, and `const` in JavaScript, with examples suitable for an interview:
-
 ---
 
 # 🚀 Difference Between `let`, `var`, and `const`

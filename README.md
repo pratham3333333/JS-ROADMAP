@@ -1,4 +1,93 @@
 
+
+# ✨ JavaScript Arithmetic Operators ➕➖✖️➗
+
+This document provides examples of JavaScript arithmetic operators with simple and interactive code snippets.
+
+---
+
+## 📋 Arithmetic Operators Table
+
+| Operator | Description           | Example      | Result |
+|----------|-----------------------|--------------|--------|
+| `+`      | Addition              | `5 + 3`      | `8`    |
+| `-`      | Subtraction           | `5 - 3`      | `2`    |
+| `*`      | Multiplication        | `5 * 3`      | `15`   |
+| `/`      | Division              | `6 / 3`      | `2`    |
+| `%`      | Modulus (Remainder)   | `5 % 2`      | `1`    |
+| `**`     | Exponentiation (Power)| `5 ** 2`     | `25`   |
+
+---
+
+## 🖥️ Examples of JavaScript Arithmetic Operators
+
+### 1️⃣ **Addition (`+`)**
+The `+` operator adds two numbers together.
+
+```javascript
+let a = 5;
+let b = 3;
+console.log(a + b); // Output: 8
+```
+
+---
+
+### 2️⃣ **Subtraction (`-`)**
+The `-` operator subtracts the second number from the first.
+
+```javascript
+let a = 5;
+let b = 3;
+console.log(a - b); // Output: 2
+```
+
+---
+
+### 3️⃣ **Multiplication (`*`)**
+The `*` operator multiplies two numbers.
+
+```javascript
+let a = 5;
+let b = 3;
+console.log(a * b); // Output: 15
+```
+
+---
+
+### 4️⃣ **Division (`/`)**
+The `/` operator divides the first number by the second.
+
+```javascript
+let a = 6;
+let b = 3;
+console.log(a / b); // Output: 2
+```
+
+---
+
+### 5️⃣ **Modulus (`%`)**
+The `%` operator returns the remainder of the division.
+
+```javascript
+let a = 5;
+let b = 2;
+console.log(a % b); // Output: 1
+```
+
+---
+
+### 6️⃣ **Exponentiation (`**`)**
+The `**` operator raises the first number to the power of the second.
+
+```javascript
+let a = 5;
+let b = 2;
+console.log(a ** b); // Output: 25
+```
+
+---
+
+
 # ✍️ JavaScript Assignment Operators 🖥️
 
 This document explains **JavaScript Assignment Operators** with brief descriptions and code examples.
@@ -199,3 +288,4 @@ The `<=` operator checks if the left operand is less than or equal to the right 
 let a = 5;
 console.log(a <= 3); // false
 ```
+

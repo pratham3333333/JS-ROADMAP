@@ -1,4 +1,212 @@
 
+```markdown
+# 🌟 Advanced JavaScript Console Methods 🚀
+
+Welcome to the **Advanced JavaScript Console Methods** repository! This guide will help you understand and use advanced features of the `console` object in JavaScript to make debugging and logging more efficient. 
+
+---
+
+## 🌐 Table of Contents
+
+1. [Console.log with Formatting](#-consolelog-with-formatting)
+2. [Console.error and Console.warn](#-consoleerror-and-consolewarn)
+3. [Console.table](#-consoletable)
+4. [Console.assert](#-consoleassert)
+5. [Console.group and Console.groupCollapsed](#-consolegroup-and-consolegroupcollapsed)
+6. [Console.count](#-consolecount)
+7. [Console.time and Console.timeEnd](#-consoletime-and-consoletimeend)
+8. [Console.trace](#-consoletrace)
+
+---
+
+### 1. 🎨 Console.log with Formatting
+
+You can add colors and styles to your console logs for better visibility.
+
+```javascript
+console.log("%cHello, styled log!", "color: blue; font-size: 16px; font-weight: bold;");
+console.log("%cError log", "color: red; background-color: yellow; padding: 2px;");
+```
+
+<details>
+  <summary>🖥️ Output</summary>
+
+Styled messages in the console with specified colors, fonts, and sizes. 🎨
+
+</details>
+
+---
+
+### 2. ⚠️ Console.error and Console.warn
+
+Use `console.error` for errors and `console.warn` for warnings.
+
+```javascript
+console.error("❌ This is an error message");
+console.warn("⚠️ This is a warning message");
+```
+
+<details>
+  <summary>🖥️ Output</summary>
+
+- **Error:** ❌ This is an error message
+- **Warning:** ⚠️ This is a warning message
+
+</details>
+
+---
+
+### 3. 📝 Console.table
+
+`console.table` is great for displaying arrays or objects as tables.
+
+```javascript
+const users = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 }
+];
+console.table(users);
+```
+
+<details>
+  <summary>🖥️ Output</summary>
+
+A tabular display of the `users` array:
+```
+┌─────────┬──────────┬─────┐
+│ (index) │   name   │ age │
+├─────────┼──────────┼─────┤
+│    0    │ 'Alice'  │ 25  │
+│    1    │ 'Bob'    │ 30  │
+└─────────┴──────────┴─────┘
+```
+
+</details>
+
+---
+
+### 4. 🛑 Console.assert
+
+Use `console.assert` to log errors when a condition is `false`.
+
+```javascript
+const age = 15;
+console.assert(age >= 18, "❌ Age must be 18 or older");
+```
+
+<details>
+  <summary>🖥️ Output</summary>
+
+```
+Assertion failed: ❌ Age must be 18 or older
+```
+
+</details>
+
+---
+
+### 5. 🧩 Console.group and Console.groupCollapsed
+
+Group related logs together for better organization.
+
+```javascript
+console.group("Group 1");
+console.log("Message 1");
+console.log("Message 2");
+console.groupEnd();
+
+console.groupCollapsed("Collapsed Group");
+console.log("Hidden Message 1");
+console.log("Hidden Message 2");
+console.groupEnd();
+```
+
+<details>
+  <summary>🖥️ Output</summary>
+
+- **Group 1**: Messages are displayed together.
+- **Collapsed Group**: Messages are hidden until expanded.
+
+</details>
+
+---
+
+### 6. 🔢 Console.count
+
+Count the number of times a specific label is logged.
+
+```javascript
+console.count("Counter");
+console.count("Counter");
+console.count("Another Counter");
+console.count("Counter");
+```
+
+<details>
+  <summary>🖥️ Output</summary>
+
+```
+Counter: 1
+Counter: 2
+Another Counter: 1
+Counter: 3
+```
+
+</details>
+
+---
+
+### 7. ⏱️ Console.time and Console.timeEnd
+
+Measure the time taken to execute a block of code.
+
+```javascript
+console.time("Timer");
+for (let i = 0; i < 1000000; i++) {}
+console.timeEnd("Timer");
+```
+
+<details>
+  <summary>🖥️ Output</summary>
+
+```
+Timer: 3.123ms (Time may vary based on system performance)
+```
+
+</details>
+
+---
+
+### 8. 🧵 Console.trace
+
+Print the stack trace of a function call.
+
+```javascript
+function first() {
+  second();
+}
+
+function second() {
+  console.trace("Stack trace");
+}
+
+first();
+```
+
+<details>
+  <summary>🖥️ Output</summary>
+
+```
+Trace: Stack trace
+    at second (<file_path>:line:column)
+    at first (<file_path>:line:column)
+    at <main execution context>
+```
+
+</details>
+
+---
+
 ### 📋Arithmetic Operators Table
 
 | Operator | Description           | Example      | Result |

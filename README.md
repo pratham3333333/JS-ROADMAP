@@ -289,3 +289,177 @@ let a = 5;
 console.log(a <= 3); // false
 ```
 
+
+# 🔗 JavaScript Logical Operators
+
+JavaScript **Logical Operators** are used to perform logical operations and return Boolean results based on their operands.
+
+---
+
+## 📋 Logical Operators Table
+
+| Operator | Description                       | Example                | Result       |
+|----------|-----------------------------------|------------------------|--------------|
+| `&&`     | Logical AND (returns `true` if both operands are true) | `true && false` | `false` |
+| `||`     | Logical OR (returns `true` if at least one operand is true) | `true || false` | `true`  |
+| `!`      | Logical NOT (inverts the Boolean value) | `!true`         | `false` |
+
+---
+
+## 🖥️ Examples of Logical Operators
+
+### 1️⃣ **Logical AND (`&&`)**
+The `&&` operator returns `true` if both operands are `true`.
+
+```javascript
+let a = true;
+let b = false;
+
+console.log(a && b); // Output: false
+console.log(a && !b); // Output: true
+```
+
+---
+
+### 2️⃣ **Logical OR (`||`)**
+The `||` operator returns `true` if at least one operand is `true`.
+
+```javascript
+let a = true;
+let b = false;
+
+console.log(a || b); // Output: true
+console.log(!a || b); // Output: false
+```
+
+---
+
+### 3️⃣ **Logical NOT (`!`)**
+The `!` operator inverts the Boolean value.
+
+```javascript
+let a = true;
+
+console.log(!a); // Output: false
+console.log(!false); // Output: true
+```
+
+---
+
+## 🌟 Real-World Examples
+
+1. **Form Validation**  
+   Use logical operators to validate user input.
+
+   ```javascript
+   let username = "Pratham";
+   let password = "12345";
+
+   if (username && password) {
+       console.log("Form is valid!");
+   } else {
+       console.log("Please fill all fields.");
+   }
+   ```
+
+2. **Access Control**  
+   Grant access based on multiple conditions.
+
+   ```javascript
+   let isAdmin = true;
+   let isLoggedIn = true;
+
+   if (isAdmin && isLoggedIn) {
+       console.log("Welcome, Admin!");
+   } else {
+       console.log("Access denied.");
+   }
+   ```
+
+---
+
+## 📝 Interview Questions with Answers and Solutions
+
+### 1️⃣ **Question**:  
+What will be the output of the following code?
+
+```javascript
+console.log(true && false || !false);
+```
+
+**Answer**:  
+`true`
+
+**Solution**:  
+1. Evaluate `!false` → `true`.  
+2. Evaluate `true && false` → `false`.  
+3. Evaluate `false || true` → `true`.
+
+---
+
+### 2️⃣ **Question**:  
+Write a condition to check if a user is either an admin or a premium member.
+
+**Solution**:  
+```javascript
+let isAdmin = false;
+let isPremiumMember = true;
+
+if (isAdmin || isPremiumMember) {
+    console.log("Access granted.");
+} else {
+    console.log("Access denied.");
+}
+```
+
+---
+
+### 3️⃣ **Question**:  
+What will the following code return?
+
+```javascript
+let a = false;
+let b = true;
+console.log(a || (b && !a));
+```
+
+**Answer**:  
+`true`
+
+**Solution**:  
+1. Evaluate `!a` → `true`.  
+2. Evaluate `b && true` → `true`.  
+3. Evaluate `a || true` → `true`.
+
+---
+
+### 4️⃣ **Question**:  
+How can you check if a number is in a specific range (e.g., between 10 and 20)?
+
+**Solution**:  
+```javascript
+let number = 15;
+
+if (number >= 10 && number <= 20) {
+    console.log("Number is in the range.");
+} else {
+    console.log("Number is out of range.");
+}
+```
+
+---
+
+### 5️⃣ **Question**:  
+What is the difference between `&&` and `||` operators in terms of short-circuit evaluation?
+
+**Answer**:  
+- `&&` stops evaluating as soon as the first `false` is encountered.  
+- `||` stops evaluating as soon as the first `true` is encountered.
+
+**Example**:  
+```javascript
+let a = false && console.log("This won't execute.");
+let b = true || console.log("This won't execute.");
+```
+
+---

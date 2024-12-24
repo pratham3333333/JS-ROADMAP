@@ -171,6 +171,74 @@ John  | 30
 ---
 
 
+Here is a **table** that highlights the **differences** between `let`, `var`, and `const` in JavaScript, with examples suitable for an interview:
+
+---
+
+# 🚀 Difference Between `let`, `var`, and `const`
+
+| Feature                | `var`                                       | `let`                                       | `const`                                     |
+|------------------------|---------------------------------------------|---------------------------------------------|---------------------------------------------|
+| **Scope**              | Function scope (if declared inside a function) or globally scoped | Block scope (if declared inside a block)   | Block scope (like `let`, but must be initialized) |
+| **Hoisting**           | Hoisted to the top of the function or global scope, but not initialized | Hoisted to the top of the block, but not initialized | Hoisted to the top of the block, but not initialized |
+| **Re-declaration**     | Can be re-declared in the same scope       | Cannot be re-declared in the same scope     | Cannot be re-declared or reassigned         |
+| **Re-assignment**      | Can be reassigned                          | Can be reassigned                          | Cannot be reassigned once initialized       |
+| **Initialization**     | Can be declared without initialization     | Can be declared without initialization     | Must be initialized when declared          |
+| **Usage**              | Older way to declare variables             | Recommended for modern JavaScript use       | Used for constants or values that should not change |
+| **Example**            | `var x = 10;`                              | `let y = 20;`                              | `const z = 30;`                             |
+| **Output of re-assignment** | `x = 5;` reassigning is allowed          | `y = 10;` reassigning is allowed           | `z = 40;` will throw an error               |
+
+---
+
+### **Examples**
+
+#### 1. **Example with `var`**
+
+```javascript
+var x = 10;
+if (true) {
+  var x = 20;  // Re-declaration and reassignment
+}
+console.log(x); // Output: 20
+```
+
+- **Explanation**: `var` is function-scoped, and it can be re-declared within the same scope. In this case, the value of `x` inside the `if` block changes the value of `x` globally.
+
+---
+
+#### 2. **Example with `let`**
+
+```javascript
+let y = 10;
+if (true) {
+  let y = 20;  // Block-scoped, separate from outer y
+}
+console.log(y); // Output: 10
+```
+
+- **Explanation**: `let` is block-scoped, so the `y` inside the `if` block does not affect the `y` outside. The output is `10`.
+
+---
+
+#### 3. **Example with `const`**
+
+```javascript
+const z = 30;
+z = 40; // Error: Assignment to constant variable
+```
+
+- **Explanation**: `const` variables cannot be reassigned once initialized, so this will throw an error.
+
+---
+
+### **Key Takeaways**:
+
+- **`var`**: Function-scoped, allows re-declaration and reassignment.
+- **`let`**: Block-scoped, allows reassignment but not re-declaration in the same scope.
+- **`const`**: Block-scoped, cannot be reassigned or re-declared. Used for constants.
+
+This table provides a quick comparison for interviews and understanding the usage of `let`, `var`, and `const` in JavaScript.
+
 # 🌟 Advanced JavaScript Console Methods 🚀
 
 Welcome to the **Advanced JavaScript Console Methods** repository! This guide will help you understand and use advanced features of the `console` object in JavaScript to make debugging and logging more efficient. 

@@ -1398,3 +1398,194 @@ That’s it! Use these to simplify your JavaScript code! 🚀
 
 These two operators help simplify your JavaScript code! 🚀
 </details>
+
+
+
+# 🧑‍💻 JavaScript Control Flow Statements
+
+JavaScript control flow statements help manage the flow of the code execution based on conditions and loops.
+
+---
+
+## 🌟 If Statement
+
+An **If Statement** executes a block of code if the specified condition is `true`.
+
+<details>
+<summary>Click to see Output</summary>
+
+### ✅ Example:
+
+```javascript
+const temperature = 25;
+if (temperature > 20) {
+  console.log("It's warm outside! 🌞");
+}
+```
+
+**Output:**
+```
+It's warm outside! 🌞
+```
+
+</details>
+
+---
+
+## 🌟 If-Else Statement
+
+An **If-Else Statement** provides an alternative block of code that runs if the condition is `false`.
+
+<details>
+<summary>Click to see Output</summary>
+
+### ✅ Example:
+
+```javascript
+const time = 15;
+if (time < 12) {
+  console.log("Good morning! 🌅");
+} else {
+  console.log("Good afternoon! 🌞");
+}
+```
+
+**Output:**
+```
+Good afternoon! 🌞
+```
+
+</details>
+
+---
+
+## 🌟 If-Elif-Else Statement
+
+An **If-Elif-Else Statement** allows you to check multiple conditions sequentially.
+
+<details>
+<summary>Click to see Output</summary>
+
+### ✅ Example:
+
+```javascript
+const age = 18;
+if (age < 18) {
+  console.log("You are a minor. 👶");
+} else if (age >= 18 && age < 60) {
+  console.log("You are an adult. 👨‍💼");
+} else {
+  console.log("You are a senior citizen. 👵");
+}
+```
+
+**Output:**
+```
+You are an adult. 👨‍💼
+```
+
+</details>
+
+---
+
+## 🌟 Switch Statement
+
+A **Switch Statement** evaluates an expression and executes the corresponding case block based on the value of that expression.
+
+<details>
+<summary>Click to see Output</summary>
+
+### ✅ Example:
+
+```javascript
+const day = 3;
+switch (day) {
+  case 1:
+    console.log("Monday 🗓️");
+    break;
+  case 2:
+    console.log("Tuesday 🗓️");
+    break;
+  case 3:
+    console.log("Wednesday 🗓️");
+    break;
+  default:
+    console.log("Invalid day! 🚫");
+}
+```
+
+**Output:**
+```
+Wednesday 🗓️
+```
+
+</details>
+
+---
+
+## 🌟 Break and Continue Statements
+
+- The **Break Statement** is used to exit a loop or switch statement.
+- The **Continue Statement** skips the current iteration and moves to the next one in a loop.
+
+<details>
+<summary>Click to see Output</summary>
+
+### ✅ Example 1: Break Statement
+
+```javascript
+for (let i = 0; i < 5; i++) {
+  if (i === 3) {
+    break;
+  }
+  console.log(i);
+}
+```
+
+**Output:**
+```
+0
+1
+2
+```
+
+### ✅ Example 2: Continue Statement
+
+```javascript
+for (let i = 0; i < 5; i++) {
+  if (i === 3) {
+    continue;
+  }
+  console.log(i);
+}
+```
+
+**Output:**
+```
+0
+1
+2
+4
+```
+
+</details>
+
+---
+
+## 🔑 Summary
+
+- **If Statement**: Executes code if the condition is true.
+- **If-Else Statement**: Executes one block of code if the condition is true, otherwise, another block is executed.
+- **If-Elif-Else Statement**: Checks multiple conditions in sequence.
+- **Switch Statement**: Checks an expression and executes the corresponding case block.
+- **Break Statement**: Exits a loop or switch statement.
+- **Continue Statement**: Skips the current iteration of a loop and moves to the next one.
+
+Happy coding! 🚀
+```
+
+### How It Works:
+- When the user clicks the **"Click to see Output"** summary, the corresponding output is revealed.
+- The **"Summary"** section for each example summarizes the behavior of the code, with the full output appearing when the user clicks on the details tag.
+
+This structure ensures the README is clean and easy to navigate, especially when it involves multiple examples.

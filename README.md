@@ -905,13 +905,3 @@ This format provides a **clean and interactive** way for students to practice co
 
 Let me know if you'd like to add more tasks or explanations!
 ```
-
-### Explanation:
-- This file uses the `<details>` and `<summary>` HTML tags to create collapsible sections where the answer is hidden until the user clicks "Show Answer".
-- The tasks include:
-  - **Basic Practice** using the `&&` operator.
-  - **Conditional Statements** with age and ID checks.
-  - **Combining Logical Operators** with access control criteria.
-- The solution for each task is revealed when the user clicks on the "Show Answer" button.
-
-This interactive format is perfect for a GitHub repository, allowing users to work through the tasks independently and view solutions when needed.

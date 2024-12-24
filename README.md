@@ -766,3 +766,152 @@ Type operators in JavaScript, such as `typeof`, `instanceof`, `constructor`, and
 Happy coding! 🚀
 
 ---
+
+Here's a properly formatted **GitHub README** file for **JavaScript Logical Operators** practice tasks. It includes interactive **Show Answer** sections, where the answers will be revealed when clicked.
+
+```markdown
+# JavaScript Logical Operators Practice 🚀
+
+Welcome to the **JavaScript Logical Operators Practice** guide! This file contains various tasks related to logical operators in JavaScript. Each task has a description, and you can reveal the solutions by clicking on the "Show Answer" button.
+
+## 📜 Table of Contents
+
+- [Task 1: Basic Practice](#task-1-basic-practice)
+- [Task 2: Conditional Statements](#task-2-conditional-statements)
+- [Task 3: Combining Logical Operators](#task-3-combining-logical-operators)
+
+---
+
+## 🔢 Task 1: Basic Practice (10 minutes)
+
+**Problem:**  
+Write a function that checks if a number is between 10 and 20 using the logical AND (`&&`) operator.
+
+```javascript
+function checkNumberInRange(number) {
+  // Your code here
+}
+```
+
+<details>
+  <summary>Show Answer</summary>
+
+  **Solution:**
+
+  ```javascript
+  function checkNumberInRange(number) {
+    if (number >= 10 && number <= 20) {
+      return "The number is between 10 and 20.";
+    } else {
+      return "The number is not between 10 and 20.";
+    }
+  }
+
+  console.log(checkNumberInRange(15)); // Output: "The number is between 10 and 20."
+  console.log(checkNumberInRange(25)); // Output: "The number is not between 10 and 20."
+  ```
+
+  **Explanation:**
+  - The function checks if the number is greater than or equal to 10 **and** less than or equal to 20 using the `&&` logical operator.
+
+</details>
+
+---
+
+## 🗳️ Task 2: Conditional Statements (10 minutes)
+
+**Problem:**  
+Create a simple program that checks if a user is allowed to vote based on their age and whether they have an ID.
+
+```javascript
+function canVote(age, hasID) {
+  // Your code here
+}
+```
+
+<details>
+  <summary>Show Answer</summary>
+
+  **Solution:**
+
+  ```javascript
+  function canVote(age, hasID) {
+    if (age >= 18 && hasID) {
+      return "You are allowed to vote!";
+    } else {
+      return "You are not allowed to vote.";
+    }
+  }
+
+  console.log(canVote(20, true)); // Output: "You are allowed to vote!"
+  console.log(canVote(17, true)); // Output: "You are not allowed to vote."
+  console.log(canVote(20, false)); // Output: "You are not allowed to vote."
+  ```
+
+  **Explanation:**
+  - The function checks if the user is **18 or older** **and** has an ID using the `&&` logical operator.
+
+</details>
+
+---
+
+## 🔒 Task 3: Combining Logical Operators (10 minutes)
+
+**Problem:**  
+Write a function that checks if a person can access a restricted area. The criteria are:
+- Must be **over 18** OR have a **special access badge**.
+- Must **NOT** be on the restricted list.
+
+```javascript
+function canAccessRestrictedArea(age, hasBadge, isRestricted) {
+  // Your code here
+}
+```
+
+<details>
+  <summary>Show Answer</summary>
+
+  **Solution:**
+
+  ```javascript
+  function canAccessRestrictedArea(age, hasBadge, isRestricted) {
+    if ((age > 18 || hasBadge) && !isRestricted) {
+      return "Access granted.";
+    } else {
+      return "Access denied.";
+    }
+  }
+
+  console.log(canAccessRestrictedArea(25, false, false)); // Output: "Access granted."
+  console.log(canAccessRestrictedArea(17, true, false)); // Output: "Access granted."
+  console.log(canAccessRestrictedArea(25, false, true)); // Output: "Access denied."
+  ```
+
+  **Explanation:**
+  - The function checks if the person is either **over 18** or has a **special access badge** using the `||` operator.
+  - It also ensures that the person is **not** on the restricted list using the `!` (not) operator.
+  
+</details>
+
+---
+
+## 🎉 Conclusion
+
+Logical operators are essential in JavaScript for building conditional statements that allow your code to make decisions based on multiple conditions. Practice these tasks to strengthen your understanding of `&&`, `||`, and `!` operators.
+
+---
+
+This format provides a **clean and interactive** way for students to practice coding exercises with easy access to solutions when they need them. If you're hosting this file on GitHub, it will work perfectly with **GitHub Pages** or any Markdown renderer that supports `<details>` and `<summary>` elements.
+
+Let me know if you'd like to add more tasks or explanations!
+```
+
+### Explanation:
+- This file uses the `<details>` and `<summary>` HTML tags to create collapsible sections where the answer is hidden until the user clicks "Show Answer".
+- The tasks include:
+  - **Basic Practice** using the `&&` operator.
+  - **Conditional Statements** with age and ID checks.
+  - **Combining Logical Operators** with access control criteria.
+- The solution for each task is revealed when the user clicks on the "Show Answer" button.
+
+This interactive format is perfect for a GitHub repository, allowing users to work through the tasks independently and view solutions when needed.

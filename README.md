@@ -1400,7 +1400,7 @@ These two operators help simplify your JavaScript code! 🚀
 </details>
 
 
-
+```
 
 ## 🌟 If-Else Statement
 
@@ -1552,10 +1552,4 @@ for (let i = 0; i < 5; i++) {
 - **Continue Statement**: Skips the current iteration of a loop and moves to the next one.
 
 Happy coding! 🚀
-```
 
-### How It Works:
-- When the user clicks the **"Click to see Output"** summary, the corresponding output is revealed.
-- The **"Summary"** section for each example summarizes the behavior of the code, with the full output appearing when the user clicks on the details tag.
-
-This structure ensures the README is clean and easy to navigate, especially when it involves multiple examples.

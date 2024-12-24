@@ -1271,9 +1271,130 @@ function canAccessRestrictedArea(age, hasBadge, isRestricted) {
 
 Logical operators are essential in JavaScript for building conditional statements that allow your code to make decisions based on multiple conditions. Practice these tasks to strengthen your understanding of `&&`, `||`, and `!` operators.
 
+# 🔄 Spread and Rest Operators in JavaScript
+
+The `...` (three dots) can do two things:
+- **Spread Operator**: Break things apart.
+- **Rest Operator**: Gather things together.
+
 ---
 
-This format provides a **clean and interactive** way for students to practice coding exercises with easy access to solutions when they need them. If you're hosting this file on GitHub, it will work perfectly with **GitHub Pages** or any Markdown renderer that supports `<details>` and `<summary>` elements.
+## 🌟 Spread Operator
 
-Let me know if you'd like to add more tasks or explanations!
+The **Spread Operator** (`...`) is used to copy or combine arrays or objects and pass elements as individual values.
+
+### ✅ Example 1: Combining Arrays
+
+```javascript
+const fruits = ["apple", "banana"];
+const vegetables = ["carrot", "broccoli"];
+const food = [...fruits, ...vegetables];
+console.log(food);
+<details>
+<summary>Detail</summary>
+
+Here’s a **super simple explanation** of the **Spread and Rest Operators** with easy-to-understand examples:
+
+```markdown
+# 🔄 Spread and Rest Operators in JavaScript
+
+The `...` (three dots) can do two things:
+- **Spread Operator**: Break things apart.
+- **Rest Operator**: Gather things together.
+
+---
+
+## 🌟 Spread Operator
+
+The **Spread Operator** (`...`) is used to copy or combine arrays or objects and pass elements as individual values.
+
+### ✅ Example 1: Combining Arrays
+
+```javascript
+const fruits = ["apple", "banana"];
+const vegetables = ["carrot", "broccoli"];
+const food = [...fruits, ...vegetables];
+console.log(food);
 ```
+
+**Output:**
+```
+["apple", "banana", "carrot", "broccoli"]
+```
+
+---
+
+### ✅ Example 2: Copying an Object
+
+```javascript
+const person = { name: "John", age: 30 };
+const newPerson = { ...person, occupation: "Teacher" };
+console.log(newPerson);
+```
+
+**Output:**
+```
+{ name: "John", age: 30, occupation: "Teacher" }
+```
+
+---
+
+## 🌟 Rest Operator
+
+The **Rest Operator** (`...`) collects multiple items into a single array or object.
+
+### ✅ Example 1: Function with Multiple Arguments
+
+```javascript
+function sum(...numbers) {
+  console.log(numbers); // [1, 2, 3]
+  return numbers.reduce((total, num) => total + num, 0);
+}
+console.log(sum(1, 2, 3));
+```
+
+**Output:**
+```
+[1, 2, 3]
+6
+```
+
+---
+
+### ✅ Example 2: Destructuring with Rest
+
+```javascript
+const colors = ["red", "blue", "green", "yellow"];
+const [first, second, ...others] = colors;
+console.log(first);  // "red"
+console.log(second); // "blue"
+console.log(others); // ["green", "yellow"]
+```
+
+**Output:**
+```
+red
+blue
+["green", "yellow"]
+```
+
+---
+
+## 🔑 Summary
+
+- **Spread Operator (`...`)**: Breaks things into smaller parts (e.g., spreads an array).
+- **Rest Operator (`...`)**: Gathers things into one group (e.g., collects extra arguments).
+
+That’s it! Use these to simplify your JavaScript code! 🚀
+```
+
+</details>
+
+<details>
+<summary>Summary</summary>
+
+- **Spread Operator (`...`)**: Breaks things into smaller parts, like spreading an array or copying an object.
+- **Rest Operator (`...`)**: Gathers things into one group, like collecting arguments in a function or destructuring values.
+
+These two operators help simplify your JavaScript code! 🚀
+</details>

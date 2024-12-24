@@ -1809,3 +1809,282 @@ Fruit is either apple or banana.
 
 These interview questions and answers cover a wide range of **JavaScript control flow statements** such as `if`, `else if`, `else`, `switch`, `break`, and `continue`. They will help you demonstrate your understanding of conditional logic and loops in JavaScript.
 
+# 🚀 JavaScript Pop-up Boxes & Functions
+
+This document explains various **pop-up boxes** (like alert, confirm, and prompt) and **functions** in JavaScript with simple examples and outputs. The examples will help you understand how to use these features in your projects.
+
+---
+
+## 📣 **Alert Box**
+
+An **alert box** is a simple popup that displays a message to the user and has an "OK" button. It is commonly used to display information or warnings.
+
+<details>
+<summary>Example 1: Simple Alert Box</summary>
+
+```javascript
+alert("Welcome to our website!");
+
+```
+# 🚀 JavaScript Pop-up Boxes & Functions
+
+This document explains various **pop-up boxes** (like alert, confirm, and prompt) and **functions** in JavaScript with simple examples and outputs. The examples will help you understand how to use these features in your projects.
+
+---
+
+## 📣 **Alert Box**
+
+An **alert box** is a simple popup that displays a message to the user and has an "OK" button. It is commonly used to display information or warnings.
+
+<details>
+<summary>Example 1: Simple Alert Box</summary>
+
+```javascript
+alert("Welcome to our website!");
+```
+
+**Output:**  
+A popup appears with the message "Welcome to our website!" and an "OK" button.
+
+</details>
+
+<details>
+<summary>Example 2: Alert for Form Submission</summary>
+
+```javascript
+function submitForm() {
+  alert("Your form has been submitted!");
+}
+submitForm();
+```
+
+**Output:**  
+A popup appears with the message "Your form has been submitted!" and an "OK" button.
+
+</details>
+
+---
+
+## ✔️ **Confirm Box**
+
+A **confirm box** is used to ask the user for confirmation. It provides "OK" and "Cancel" buttons, returning `true` if the user clicks "OK" and `false` if the user clicks "Cancel".
+
+<details>
+<summary>Example 1: Simple Confirm Box</summary>
+
+```javascript
+let result = confirm("Do you want to delete this item?");
+if (result) {
+  console.log("Item deleted.");
+} else {
+  console.log("Action canceled.");
+}
+```
+
+**Output:**  
+A popup appears with the message "Do you want to delete this item?" and "OK" and "Cancel" buttons.  
+The console will log "Item deleted." or "Action canceled." depending on the user's choice.
+
+</details>
+
+<details>
+<summary>Example 2: Confirm Box for Navigation</summary>
+
+```javascript
+let navigate = confirm("Are you sure you want to leave this page?");
+if (navigate) {
+  window.location.href = "https://www.example.com";
+} else {
+  console.log("Staying on the page.");
+}
+```
+
+**Output:**  
+A popup appears asking "Are you sure you want to leave this page?" and depending on the user's choice, the page either navigates or stays.
+
+</details>
+
+---
+
+## ✍️ **Prompt Box**
+
+A **prompt box** asks the user for input and returns the value entered by the user in a text field.
+
+<details>
+<summary>Example 1: Simple Prompt Box</summary>
+
+```javascript
+let userName = prompt("Please enter your name:");
+console.log("Hello, " + userName);
+```
+
+**Output:**  
+A prompt box asks the user to enter their name. The console will display "Hello, [name]" after the user enters the name.
+
+</details>
+
+<details>
+<summary>Example 2: Prompt Box for Age</summary>
+
+```javascript
+let age = prompt("How old are you?");
+console.log("You are " + age + " years old.");
+```
+
+**Output:**  
+A prompt box asks the user "How old are you?". The console will display "You are [age] years old." after the user enters their age.
+
+</details>
+
+---
+
+## 🛠️ **Functions in JavaScript**
+
+A **function** in JavaScript is a block of code that performs a specific task. Functions can take inputs (parameters) and return values.
+
+<details>
+<summary>Example 1: Simple Function</summary>
+
+```javascript
+function greet() {
+  console.log("Hello, World!");
+}
+greet();
+```
+
+**Output:**  
+```
+Hello, World!
+```
+
+</details>
+
+<details>
+<summary>Example 2: Function with Return Value</summary>
+
+```javascript
+function add(a, b) {
+  return a + b;
+}
+let result = add(3, 4);
+console.log(result);
+```
+
+**Output:**  
+```
+7
+```
+
+</details>
+
+---
+
+## 🎯 **Functions with Parameters**
+
+Functions with **parameters** allow you to pass values into the function for processing. These values can be used to perform calculations or customize the function’s behavior.
+
+<details>
+<summary>Example 1: Function with One Parameter</summary>
+
+```javascript
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+greet("John");
+```
+
+**Output:**  
+```
+Hello, John!
+```
+
+</details>
+
+<details>
+<summary>Example 2: Function with Multiple Parameters</summary>
+
+```javascript
+function multiply(a, b) {
+  return a * b;
+}
+let result = multiply(5, 3);
+console.log(result);
+```
+
+**Output:**  
+```
+15
+```
+
+</details>
+
+---
+
+## 🔁 **Function with Return Value**
+
+A **function with return** takes input, processes it, and returns a result. The `return` keyword is used to send the value back to the calling code.
+
+<details>
+<summary>Example 1: Function with Return</summary>
+
+```javascript
+function greet(name) {
+  return "Hello, " + name + "!";
+}
+let message = greet("Alice");
+console.log(message);
+```
+
+**Output:**  
+```
+Hello, Alice!
+```
+
+</details>
+
+<details>
+<summary>Example 2: Function with Return for Calculation</summary>
+
+```javascript
+function subtract(a, b) {
+  return a - b;
+}
+let result = subtract(10, 5);
+console.log(result);
+```
+
+**Output:**  
+```
+5
+```
+
+</details>
+
+---
+
+## 📚 **Summary**
+
+- **Alert Box (`alert`)**: Displays a simple message to the user.
+- **Confirm Box (`confirm`)**: Asks for user confirmation with "OK" and "Cancel".
+- **Prompt Box (`prompt`)**: Asks for user input and returns the entered value.
+- **Functions**: A block of code that performs a specific task. Functions can have parameters and return values.
+- **Functions with Parameters**: Functions that accept inputs to customize their behavior.
+- **Functions with Return**: Functions that process input and return a result.
+
+These JavaScript features are essential for creating interactive web applications and are commonly used in many coding tasks.
+
+---
+
+Enjoy learning JavaScript! 😄
+```
+
+### Explanation:
+
+- **Alert Box**: Used to display simple messages to users.
+- **Confirm Box**: Used for obtaining user confirmation.
+- **Prompt Box**: Used to ask users for input.
+- **Functions**: Basic code blocks that can take parameters and return values.
+- **Functions with Parameters**: Functions that work with dynamic inputs.
+- **Functions with Return**: Functions that calculate and return a value.
+
+Each section has examples and outputs enclosed in **`<details>`** and **`<summary>`** tags for easy display and toggling of content. The use of emojis makes the file more engaging and easy to read!

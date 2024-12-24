@@ -600,4 +600,169 @@ Here, we check if the number is even or odd and return the corresponding result.
 
 The **ternary operator** is a great tool to write concise conditional logic in JavaScript. It’s perfect for simple conditions and can make your code more readable when used appropriately. However, avoid overusing nested ternary operators to ensure your code remains clear and easy to understand.
 
-keep coding! 🚀
+
+
+
+# JavaScript Type Operators 📊
+
+Welcome to the **JavaScript Type Operators** guide! This repository is dedicated to explaining and providing examples of **type operators** in JavaScript. Type operators are used to check and convert data types, which are fundamental for writing robust and error-free code.
+
+## 📜 Table of Contents
+
+- [Introduction](#introduction)
+- [Type Operators in JavaScript](#type-operators-in-javascript)
+  - [typeof](#typeof)
+  - [instanceof](#instanceof)
+  - [constructor](#constructor)
+  - [Array.isArray](#arrayisarray)
+- [10 Interview Practice Questions](#10-interview-practice-questions)
+- [Conclusion](#conclusion)
+
+---
+
+## 📝 Introduction
+
+In JavaScript, understanding the **type of data** is crucial for working with variables, functions, and objects. Type operators allow you to check or manipulate the types of values in your code.
+
+---
+
+## 🛠️ Type Operators in JavaScript
+
+### 1. **`typeof` Operator 🔍**
+
+The `typeof` operator is used to check the type of a variable or expression. It returns a string representing the type of the operand.
+
+#### Syntax:
+```javascript
+typeof operand;
+```
+
+#### Example:
+
+```javascript
+let name = "John";
+console.log(typeof name); // Output: "string"
+
+let age = 30;
+console.log(typeof age); // Output: "number"
+
+let isStudent = true;
+console.log(typeof isStudent); // Output: "boolean"
+```
+
+**Explanation:**
+- The `typeof` operator checks the type of `name`, `age`, and `isStudent` and returns their respective types as strings.
+
+---
+
+### 2. **`instanceof` Operator 🔗**
+
+The `instanceof` operator checks if an object is an instance of a specific class or constructor function.
+
+#### Syntax:
+```javascript
+object instanceof constructor
+```
+
+#### Example:
+
+```javascript
+let arr = [1, 2, 3];
+console.log(arr instanceof Array); // Output: true
+
+let date = new Date();
+console.log(date instanceof Date); // Output: true
+
+let obj = {};
+console.log(obj instanceof Object); // Output: true
+```
+
+**Explanation:**
+- The `instanceof` operator checks if the object `arr` is an instance of `Array`, if `date` is an instance of `Date`, and if `obj` is an instance of `Object`.
+
+---
+
+### 3. **`constructor` Property 🏗️**
+
+The `constructor` property of an object refers to the function that created the instance of that object.
+
+#### Example:
+
+```javascript
+let person = { name: "Alice", age: 25 };
+console.log(person.constructor); // Output: [Function: Object]
+
+let date = new Date();
+console.log(date.constructor); // Output: [Function: Date]
+```
+
+**Explanation:**
+- The `constructor` property points to the function that created the object. For `person`, it's the `Object` constructor, and for `date`, it's the `Date` constructor.
+
+---
+
+### 4. **`Array.isArray()` Method 🧮**
+
+The `Array.isArray()` method is used to check if a value is an array.
+
+#### Syntax:
+```javascript
+Array.isArray(value);
+```
+
+#### Example:
+
+```javascript
+let arr = [1, 2, 3];
+console.log(Array.isArray(arr)); // Output: true
+
+let notArr = { name: "John" };
+console.log(Array.isArray(notArr)); // Output: false
+```
+
+**Explanation:**
+- `Array.isArray()` checks if the given value is an array. It returns `true` for arrays and `false` for other data types.
+
+---
+
+## 🎯 10 Interview Practice Questions
+
+1. **What does the `typeof` operator do in JavaScript?**
+   - The `typeof` operator is used to determine the type of a variable or expression. It returns a string representing the type, such as `"string"`, `"number"`, `"boolean"`, etc.
+
+2. **What is the difference between `typeof` and `instanceof` in JavaScript?**
+   - `typeof` is used to check the type of a primitive value (e.g., string, number), while `instanceof` is used to check if an object is an instance of a specific class or constructor function.
+
+3. **How can you check if a value is an array in JavaScript?**
+   - You can use `Array.isArray()` to check if a value is an array. Example: `Array.isArray([1, 2, 3])` returns `true`.
+
+4. **What is the purpose of the `constructor` property in JavaScript?**
+   - The `constructor` property refers to the function that created the instance of an object. For example, an object created using the `new Date()` constructor will have `Date` as its constructor.
+
+5. **How would you check the type of a variable in JavaScript?**
+   - You can use the `typeof` operator to check the type of a variable. Example: `typeof variable`.
+
+6. **What will `typeof null` return in JavaScript?**
+   - Surprisingly, `typeof null` returns `"object"`. This is a known JavaScript bug that has been present since its early versions.
+
+7. **How can you check if an object is an instance of a specific constructor function?**
+   - You can use the `instanceof` operator. Example: `object instanceof ConstructorFunction`.
+
+8. **Can `typeof` be used to differentiate between an array and an object?**
+   - No, `typeof` returns `"object"` for both arrays and objects. To differentiate, you should use `Array.isArray()`.
+
+9. **What would `Array.isArray('hello')` return?**
+   - It would return `false`, as a string is not an array.
+
+10. **What is the output of `typeof NaN` in JavaScript?**
+    - `typeof NaN` returns `"number"`. Although `NaN` stands for "Not a Number," it is technically considered a number in JavaScript.
+
+---
+
+## 🎉 Conclusion
+
+Type operators in JavaScript, such as `typeof`, `instanceof`, `constructor`, and `Array.isArray()`, are essential tools for checking and manipulating data types. Understanding how and when to use these operators will help you write more reliable and efficient code.
+
+Happy coding! 🚀
+
+---

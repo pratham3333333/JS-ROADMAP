@@ -1,7 +1,3 @@
-Here’s a `README.md` file showcasing **Advanced Console Methods** in JavaScript with examples and emojis for better readability and engagement:
-
-```markdown
-
 
 
 # 🌟 Advanced JavaScript Console Methods 🚀

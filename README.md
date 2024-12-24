@@ -1401,36 +1401,6 @@ These two operators help simplify your JavaScript code! 🚀
 
 
 
-# 🧑‍💻 JavaScript Control Flow Statements
-
-JavaScript control flow statements help manage the flow of the code execution based on conditions and loops.
-
----
-
-## 🌟 If Statement
-
-An **If Statement** executes a block of code if the specified condition is `true`.
-
-<details>
-<summary>Click to see Output</summary>
-
-### ✅ Example:
-
-```javascript
-const temperature = 25;
-if (temperature > 20) {
-  console.log("It's warm outside! 🌞");
-}
-```
-
-**Output:**
-```
-It's warm outside! 🌞
-```
-
-</details>
-
----
 
 ## 🌟 If-Else Statement
 

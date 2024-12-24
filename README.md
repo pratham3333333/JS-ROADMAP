@@ -1,4 +1,104 @@
 
+# ✍️ JavaScript Assignment Operators 🖥️
+
+This document explains **JavaScript Assignment Operators** with brief descriptions and code examples.
+
+---
+
+## 📋 Assignment Operators Table
+
+| Operator | Description                       | Example         | Equivalent To      |
+|----------|-----------------------------------|-----------------|--------------------|
+| `=`      | Assigns a value to a variable     | `x = 5`         | `x = 5`           |
+| `+=`     | Adds and assigns the result       | `x += 3`        | `x = x + 3`       |
+| `-=`     | Subtracts and assigns the result  | `x -= 2`        | `x = x - 2`       |
+| `*=`     | Multiplies and assigns the result | `x *= 4`        | `x = x * 4`       |
+| `/=`     | Divides and assigns the result    | `x /= 2`        | `x = x / 2`       |
+| `%=`     | Assigns the remainder of division | `x %= 3`        | `x = x % 3`       |
+| `**=`    | Assigns the result of exponentiation | `x **= 2`   | `x = x ** 2`      |
+
+---
+
+## 🖥️ Examples of Assignment Operators
+
+### 1️⃣ **Basic Assignment (`=`)**
+Assigns a value to a variable.
+
+```javascript
+let x;
+x = 5; 
+console.log(x); // Output: 5
+```
+
+---
+
+### 2️⃣ **Addition Assignment (`+=`)**
+Adds a value to the variable and assigns the result.
+
+```javascript
+let x = 5;
+x += 3; // Same as x = x + 3
+console.log(x); // Output: 8
+```
+
+---
+
+### 3️⃣ **Subtraction Assignment (`-=`)**
+Subtracts a value from the variable and assigns the result.
+
+```javascript
+let x = 5;
+x -= 2; // Same as x = x - 2
+console.log(x); // Output: 3
+```
+
+---
+
+### 4️⃣ **Multiplication Assignment (`*=`)**
+Multiplies the variable by a value and assigns the result.
+
+```javascript
+let x = 5;
+x *= 4; // Same as x = x * 4
+console.log(x); // Output: 20
+```
+
+---
+
+### 5️⃣ **Division Assignment (`/=`)**
+Divides the variable by a value and assigns the result.
+
+```javascript
+let x = 10;
+x /= 2; // Same as x = x / 2
+console.log(x); // Output: 5
+```
+
+---
+
+### 6️⃣ **Modulus Assignment (`%=`)**
+Divides the variable and assigns the remainder.
+
+```javascript
+let x = 5;
+x %= 3; // Same as x = x % 3
+console.log(x); // Output: 2
+```
+
+---
+
+### 7️⃣ **Exponentiation Assignment (`**=`)**
+Raises the variable to the power of a value and assigns the result.
+
+```javascript
+let x = 2;
+x **= 3; // Same as x = x ** 3
+console.log(x); // Output: 8
+```
+
+---
+
+
 # 🚀 JavaScript Comparison Operators 🔍
 
 This document provides examples of JavaScript comparison operators, showcasing their functionality with simple code snippets.

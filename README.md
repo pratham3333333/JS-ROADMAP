@@ -1,5 +1,3 @@
-
-```markdown
 # 🌟 Advanced JavaScript Console Methods 🚀
 
 Welcome to the **Advanced JavaScript Console Methods** repository! This guide will help you understand and use advanced features of the `console` object in JavaScript to make debugging and logging more efficient. 
@@ -26,7 +24,6 @@ You can add colors and styles to your console logs for better visibility.
 ```javascript
 console.log("%cHello, styled log!", "color: blue; font-size: 16px; font-weight: bold;");
 console.log("%cError log", "color: red; background-color: yellow; padding: 2px;");
-```
 
 <details>
   <summary>🖥️ Output</summary>

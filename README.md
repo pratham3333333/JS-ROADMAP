@@ -2187,17 +2187,10 @@ A **click event** is triggered when an element (like a button) is clicked.
 <details>
 <summary>Example: Click Event</summary>
 
-```javascript
-document.getElementById("myButton").addEventListener("click", function() {
-  alert("Button clicked!");
-});
+
 # Array and Object Methods in JavaScript 🚀
 
-
-
 ## **Array Methods** 📋
-
-
 
 ### 1. **`.push()`** ➕
 

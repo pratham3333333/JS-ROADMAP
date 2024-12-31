@@ -2106,7 +2106,6 @@ Hello, Alice!
 ```
 
 </details>
-
 <details>
 <summary>Example 2: Function with Return for Calculation</summary>
 
@@ -2192,4 +2191,980 @@ A **click event** is triggered when an element (like a button) is clicked.
 document.getElementById("myButton").addEventListener("click", function() {
   alert("Button clicked!");
 });
+# Array and Object Methods in JavaScript 🚀
 
+
+
+## **Array Methods** 📋
+
+
+
+### 1. **`.push()`** ➕
+
+- **Adds one or more elements to the end of an array.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3];
+
+  arr.push(4);
+
+  console.log(arr); // [1, 2, 3, 4]
+
+  ```
+
+
+
+### 2. **`.pop()`** ➖
+
+- **Removes the last element from an array.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3];
+
+  arr.pop();
+
+  console.log(arr); // [1, 2]
+
+  ```
+
+
+
+### 3. **`.shift()`** ⬅️
+
+- **Removes the first element from an array.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3];
+
+  arr.shift();
+
+  console.log(arr); // [2, 3]
+
+  ```
+
+
+
+### 4. **`.unshift()`** ➡️
+
+- **Adds one or more elements to the beginning of an array.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3];
+
+  arr.unshift(0);
+
+  console.log(arr); // [0, 1, 2, 3]
+
+  ```
+
+
+
+### 5. **`.concat()`** 🔗
+
+- **Merges two or more arrays.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr1 = [1, 2];
+
+  const arr2 = [3, 4];
+
+  const result = arr1.concat(arr2);
+
+  console.log(result); // [1, 2, 3, 4]
+
+  ```
+
+
+
+### 6. **`.slice()`** ✂️
+
+- **Extracts a section of an array and returns a new array.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3, 4];
+
+  const sliced = arr.slice(1, 3);
+
+  console.log(sliced); // [2, 3]
+
+  ```
+
+
+
+### 7. **`.splice()`** 🔄
+
+- **Adds/removes elements in an array.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3, 4];
+
+  arr.splice(1, 2, 5, 6); // Remove 2 elements and add 5, 6
+
+  console.log(arr); // [1, 5, 6, 4]
+
+  ```
+
+
+
+### 8. **`.indexOf()`** 🔍
+
+- **Returns the first index of a specified element.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3, 2];
+
+  console.log(arr.indexOf(2)); // 1
+
+  ```
+
+
+
+### 9. **`.lastIndexOf()`** 🔄🔍
+
+- **Returns the last index of a specified element.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3, 2];
+
+  console.log(arr.lastIndexOf(2)); // 3
+
+  ```
+
+
+
+### 10. **`.includes()`** ✅
+
+- **Checks if an array contains a specified element.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3];
+
+  console.log(arr.includes(2)); // true
+
+  ```
+
+
+
+### 11. **`.find()`** 🔎
+
+- **Returns the first element that matches a condition.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3, 4];
+
+  const result = arr.find((num) => num > 2);
+
+  console.log(result); // 3
+
+  ```
+
+
+
+### 12. **`.findIndex()`** 🔎🔢
+
+- **Returns the index of the first element that matches a condition.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3, 4];
+
+  const result = arr.findIndex((num) => num > 2);
+
+  console.log(result); // 2
+
+  ```
+
+
+
+### 13. **`.filter()`** 🌟
+
+- **Returns a new array with elements that satisfy a condition.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3, 4];
+
+  const result = arr.filter((num) => num > 2);
+
+  console.log(result); // [3, 4]
+
+  ```
+
+
+
+### 14. **`.map()`** 🗺️
+
+- **Creates a new array by applying a function to each element.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3];
+
+  const result = arr.map((num) => num * 2);
+
+  console.log(result); // [2, 4, 6]
+
+  ```
+
+
+
+### 15. **`.reduce()`** ➡️
+
+- **Reduces an array to a single value.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3, 4];
+
+  const result = arr.reduce((acc, num) => acc + num, 0);
+
+  console.log(result); // 10
+
+  ```
+
+
+
+### 16. **`.forEach()`** 🔁
+
+- **Executes a function for each element.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3];
+
+  arr.forEach((num) => console.log(num * 2)); // 2, 4, 6
+
+  ```
+
+
+
+### 17. **`.some()`** ⚡
+
+- **Checks if at least one element matches a condition.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3];
+
+  console.log(arr.some((num) => num > 2)); // true
+
+  ```
+
+
+
+### 18. **`.every()`** ✔️
+
+- **Checks if all elements match a condition.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3];
+
+  console.log(arr.every((num) => num > 0)); // true
+
+  ```
+
+
+
+### 19. **`.sort()`** 🔢
+
+- **Sorts the array.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [3, 1, 2];
+
+  arr.sort();
+
+  console.log(arr); // [1, 2, 3]
+
+  ```
+
+
+
+### 20. **`.reverse()`** 🔄
+
+- **Reverses the order of elements.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = [1, 2, 3];
+
+  arr.reverse();
+
+  console.log(arr); // [3, 2, 1]
+
+  ```
+
+
+
+### 21. **`.join()`** 🔗
+
+- **Joins array elements into a string.**
+
+- **Example**:
+
+  ```javascript
+
+  const arr = ['a', 'b', 'c'];
+
+  console.log(arr.join('-')); // 'a-b-c'
+
+  ```
+
+
+
+---
+
+
+
+## **Object Methods** 🛠️
+
+
+
+### 1. **`Object.keys()`** 🔑
+
+- **Returns an array of the object's keys.**
+
+- **Example**:
+
+  ```javascript
+
+  const obj = { a: 1, b: 2 };
+
+  console.log(Object.keys(obj)); // ['a', 'b']
+
+  ```
+
+
+
+### 2. **`Object.values()`** 📋
+
+- **Returns an array of the object's values.**
+
+- **Example**:
+
+  ```javascript
+
+  const obj = { a: 1, b: 2 };
+
+  console.log(Object.values(obj)); // [1, 2]
+
+  ```
+
+
+
+### 3. **`Object.entries()`** 📝
+
+- **Returns an array of key-value pairs.**
+
+- **Example**:
+
+  ```javascript
+
+  const obj = { a: 1, b: 2 };
+
+  console.log(Object.entries(obj)); // [['a', 1], ['b', 2]]
+
+  ```
+
+
+
+### 4. **`Object.assign()`** 📥
+
+- **Copies values from one or more objects to a target object.**
+
+- **Example**:
+
+  ```javascript
+
+  const target = { a: 1 };
+
+  const source = { b: 2 };
+
+  Object.assign(target, source);
+
+  console.log(target); // { a: 1, b: 2 }
+
+  ```
+
+
+
+### 5. **`Object.freeze()`** ❄️
+
+- **Prevents modification of an object.**
+
+- **Example**:
+
+  ```javascript
+
+  const obj = { a: 1 };
+
+  Object.freeze(obj);
+
+  obj.a = 2; // Error in strict mode
+
+  ```
+
+
+
+### 6. **`Object.seal()`** 🚪
+
+- **Prevents adding/removing properties but allows modification of existing ones.**
+
+- **Example**:
+
+  ```javascript
+
+  const obj = { a: 1 };
+
+  Object.seal(obj);
+
+  obj.a = 2; // Allowed
+
+  obj.b = 3; // Not allowed
+
+  ```
+
+
+
+### 7. **`Object.create()`** 🛠️
+
+- **Creates a new object with the specified prototype.**
+
+- **Example**:
+
+  ```javascript
+
+  const prototype = { greet: () => 'Hello' };
+
+  const obj = Object.create(prototype);
+
+  console.log(obj.greet()); // 'Hello'
+
+  ```
+
+
+
+### 8. **`Object.hasOwnProperty()`** ✅
+
+- **Checks if a property exists in the object (not inherited).**
+
+- **Example**:
+
+  ```javascript
+
+  const obj = { a: 1 };
+
+  console.log(obj.hasOwnProperty('a')); // true
+
+  ```
+
+
+
+### 9. **`Object.getPrototypeOf()`** 🔄
+
+- **Returns the prototype of the object.**
+
+- **Example**:
+
+  ```javascript
+
+  const obj = {};
+
+  console.log(Object.getPrototypeOf(obj)); // {}
+
+ 
+
+
+
+
+
+
+
+## Math Methods
+
+
+
+### Math.abs()
+
+
+
+**Description**: Returns the absolute value of a number.
+
+
+
+```js
+
+console.log(Math.abs(-7)); // 7
+
+```
+
+
+
+**Output**:  
+
+![](https://via.placeholder.com/200x50?text=Math.abs+Output)  
+
+`7`
+
+
+
+---
+
+
+
+### Math.ceil()
+
+
+
+**Description**: Rounds a number up to the nearest integer.
+
+
+
+```js
+
+console.log(Math.ceil(4.2)); // 5
+
+```
+
+
+
+**Output**:  
+
+![](https://via.placeholder.com/200x50?text=Math.ceil+Output)  
+
+`5`
+
+
+
+---
+
+
+
+### Math.floor()
+
+
+
+**Description**: Rounds a number down to the nearest integer.
+
+
+
+```js
+
+console.log(Math.floor(4.9)); // 4
+
+```
+
+
+
+**Output**:  
+
+![](https://via.placeholder.com/200x50?text=Math.floor+Output)  
+
+`4`
+
+
+
+---
+
+
+
+### Math.round()
+
+
+
+**Description**: Rounds a number to the nearest integer.
+
+
+
+```js
+
+console.log(Math.round(4.5)); // 5
+
+```
+
+
+
+**Output**:  
+
+![](https://via.placeholder.com/200x50?text=Math.round+Output)  
+
+`5`
+
+
+
+---
+
+
+
+## Date Methods
+
+
+
+### .getDate()
+
+
+
+**Description**: Returns the day of the month (1-31).
+
+
+
+```js
+
+const date = new Date();
+
+console.log(date.getDate()); // 28
+
+```
+
+
+
+**Output**:  
+
+![](https://via.placeholder.com/200x50?text=.getDate+Output)  
+
+`28`
+
+
+
+---
+
+
+
+### .getDay()
+
+
+
+**Description**: Returns the day of the week (0-6, where 0 is Sunday).
+
+
+
+```js
+
+const date = new Date();
+
+console.log(date.getDay()); // 2 (Tuesday)
+
+```
+
+
+
+**Output**:  
+
+![](https://via.placeholder.com/200x50?text=.getDay+Output)  
+
+`2` (Tuesday)
+
+
+
+---
+
+
+
+## Number Methods
+
+
+
+### .toFixed()
+
+
+
+**Description**: Formats a number to a fixed number of decimal places.
+
+
+
+```js
+
+const num = 5.6789;
+
+console.log(num.toFixed(2)); // "5.68"
+
+```
+
+
+
+**Output**:  
+
+![](https://via.placeholder.com/200x50?text=.toFixed+Output)  
+
+`"5.68"`
+
+
+
+---
+
+
+
+## Promise Methods
+
+
+
+### Promise.all()
+
+
+
+**Description**: Resolves when all promises are resolved, or rejects if any promise is rejected.
+
+
+
+```js
+
+const promise1 = Promise.resolve(1);
+
+const promise2 = Promise.resolve(2);
+
+Promise.all([promise1, promise2]).then(console.log); // [1, 2]
+
+```
+
+
+
+**Output**:  
+
+![](https://via.placeholder.com/200x50?text=Promise.all+Output)  
+
+`[1, 2]`
+
+
+
+---
+
+
+
+## Event Methods
+
+
+
+### .addEventListener()
+
+
+
+**Description**: Attaches an event handler to an element.
+
+
+
+```js
+
+document.addEventListener("click", () => console.log("Clicked!"));
+
+```
+
+
+
+**Output**:  
+
+![](https://via.placeholder.com/200x50?text=.addEventListener+Output)  
+
+`Clicked!` (on click)
+
+
+
+---
+
+
+
+## Error Handling
+
+
+
+### try
+
+
+
+**Description**: Defines a block of code to test for errors.
+
+
+
+```js
+
+try {
+
+  throw new Error("Oops!");
+
+} catch (error) {
+
+  console.log(error.message); // "Oops!"
+
+}
+
+```
+
+
+
+**Output**:  
+
+![](https://via.placeholder.com/200x50?text=try+Output)  
+
+`"Oops!"`
+
+
+
+---
+
+
+
+## Miscellaneous
+
+
+
+### setTimeout()
+
+
+
+**Description**: Executes a function after a specified delay (in milliseconds).
+
+
+
+```js
+
+setTimeout(() => {
+
+  console.log("Hello, World!");
+
+}, 2000); // Prints after 2 seconds
+
+```
+
+
+
+**Output**:  
+
+![](https://via.placeholder.com/200x50?text=setTimeout+Output)  
+
+`"Hello, World!"` (after 2 seconds)
+
+
+
+---
+
+
+
+## Function Types
+
+
+
+### Regular Functions
+
+
+
+**Description**: Standard function declarations.
+
+
+
+```js
+
+function add(a, b) {
+
+  return a + b;
+
+}
+
+```
+
+
+
+**Output**:  
+
+![](https://via.placeholder.com/200x50?text=Regular+Function+Output)  
+
+`add(2, 3) => 5`
+
+
+
+---
+
+
+
+## Icons
+
+
+
+- **Math Methods**: ![](https://via.placeholder.com/16x16?text=+)  
+
+- **Date Methods**: ![](https://via.placeholder.com/16x16?text=%3F)  
+
+- **Number Methods**: ![](https://via.placeholder.com/16x16?text=4)  
+
+- **Promise Methods**: ![](https://via.placeholder.com/16x16?text=%E2%9C%94)  
+
+- **Event Methods**: ![](https://via.placeholder.com/16x16?text=%F0%9F%94%8A)  
+
+- **Error Handling**: ![](https://via.placeholder.com/16x16?text=%E2%9A%A0)  
+
+- **Miscellaneous**: ![](https://via.placeholder.com/16x16?text=%E2%9C%94)
+
+
+
+---
+
+
+
+### Sample Output
+
+Here are some examples of the output you may see when running the above code snippets.
+
+
+
+- `Math.abs(-7)` → `7`
+
+- `new Date().getDate()` → `28`
+
+- `Promise.all([1, 2])` → `[1, 2]`
+
+- `setTimeout()` → `"Hello, World!"` (after 2 seconds)
+
+
+
+---

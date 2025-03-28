@@ -56,6 +56,9 @@ Hello, World!
 
 You can implement JavaScript in your HTML using `<script>` tags.
 
+![image](https://github.com/user-attachments/assets/22d2d619-a196-48e5-8d1a-0526cb39a7c4)
+
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
